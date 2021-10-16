@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <ul class="nav__list">
+                    <li class="nav__item nav__item_mobile_visible"></li>
+
+                    <li class="nav__item">
+                        <a class="nav__link" href="#search">Shop</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a class="nav__link" href="#search">Articles</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a class="nav__link" href="#search">
+                            <img class="bar-logo" src="assets/images/logo.png" alt="logo">
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a class="nav__link" href="#search">About</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a class="nav__link" href="#search">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <h1 class="title-bar">Team One's Galaxy Bar</h1>
+
+    <form class="search-form" id="search" action="#">
+        <input type="search" name="drink" id="drink-search" placeholder="Search Your Favorite Cocktail">
+    </form>
+
+    <section class="section cocktails">
+        <!-- loader -->
+        <article class="loading hide-loading">
+            <img src="./assets/images/loading.gif" alt="" />
+        </article>
+        <!-- заголовок для ошибок -->
+        <div class="error-box">
+            <h2 class="title error-title"></h2>
+            <button class="try-again-button try-again-button-hidden">Попробовать еще раз</button>
+        </div>
+        <!-- список коктейлей -->
+        <div class="section-center cocktail-container"></div>
+    </section>
+
+    <section class="single-drink single-drink-hidden">
+        <img src="" class="drink-img" alt="">
+        <article class="drink-info">
+            <h2 class="drink-name"></h2>
+            <p class="drink-desc"></p>
+            <ul class="drink-ingredients"></ul>
+            <button class="btn all-cocktails-button">all cocktails</button>
+        </article>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
